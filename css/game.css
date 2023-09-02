@@ -1,0 +1,39 @@
+body {
+  background-color: #2d2d2d;
+}
+h1 {
+    text-align: center;
+    color: rgba(57, 225, 234, 0.9);
+}
+.board {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+  }
+  .cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    font-size: 2em;
+    cursor: pointer;
+    /* color: #fff; */
+    background-color: #fbf2f2;
+  }
+
+  .border {
+    border: 2px solid rgba(57, 225, 234, 0.9);
+    filter: drop-shadow(0 0 10px rgba(234, 57, 184, .9)) drop-shadow(0 0 4px rgba(234, 57, 184, .4)) drop-shadow(0 0 1rem rgba(234, 57, 184, .3)) drop-shadow(0 0 4rem rgba(234, 57, 184, .1));
+    --bs-border-opacity: 1;
+    /* border-color: rgba(var(--bs-secondary-rgb),var(--bs-border-opacity))!important; */
+  }
+
+  p {
+    text-align: center;
+    /* border: 3px solid rgba(57, 225, 234, 0.9);
+    filter: drop-shadow(0 0 10px rgba(234, 57, 184, .9)) drop-shadow(0 0 4px rgba(234, 57, 184, .4)) drop-shadow(0 0 1rem rgba(234, 57, 184, .3)) drop-shadow(0 0 4rem rgba(234, 57, 184, .1));
+    --bs-border-opacity: 1; */
+  }
